@@ -1,0 +1,56 @@
+body{
+    background-image: linear-gradient(#F00034,#FFD8D9,#FFA9AA);
+    text-align: center;
+    background-position: center;
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-image:linear-gradient( rgb(255, 96, 96),rgba(253, 234, 231, 1)) ;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    border: 5px dotted; 
+    border-image: linear-gradient(45deg, red, yellow, green, blue) 1;
+  }
+
+  .helo{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+  }
+.kolo{
+      background-color: #FF0062;
+    border-radius: 50%;
+    box-shadow: #8B0023 6px 1px;
+    width: 224px;
+    height: 220px;
+    position: absolute;
+    z-index: 1;
+}
+  header img{
+    width:115px ;
+    height: 115px;
+    z-index: 2;
+  }
+
+  h1{
+    font-family: "Irish Grover", system-ui;
+    z-index: 2;
+  }
+
+  header{
+    background-image: url(https://yummi.club/wp-content/uploads/2016/07/marmelad-mishki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -150px;
+    padding: 120px;
+  }
