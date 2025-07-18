@@ -3,6 +3,7 @@ body{
     text-align: center;
     background-position: center;
     margin: 0;
+    cursor: url('images/Bear.png'),16 16 auto;
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -48,9 +49,9 @@ body::-webkit-scrollbar {
   }
 
   header{
-    background-image: url(https://yummi.club/wp-content/uploads/2016/07/marmelad-mishki.jpg);
+    background-image: url(images/Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0px -150px;
     padding: 120px;
   }
+
