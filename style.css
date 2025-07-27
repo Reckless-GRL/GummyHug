@@ -1,9 +1,10 @@
+html{ scroll-behavior: smooth;}
 body{
     background-image: linear-gradient(#F00034,#FFD8D9,#FFA9AA);
     text-align: center;
     background-position: center;
     margin: 0;
-    cursor: url('images/Bear.png'),16 16 auto;
+    cursor: url( images/kursor.png ) 8 0, auto;
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -52,6 +53,118 @@ body::-webkit-scrollbar {
     background-image: url(images/Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 120px;
+    padding: 70px;
   }
 
+  h3{
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+
+  }
+
+.strilka{
+  width: 50px;
+  height: 50px;
+  margin-top: 175px;
+  background-color: aliceblue;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 7px rgb(128, 126, 126);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+main{
+  background-image: url(images/candyPattern2.png);
+  background-size: 30px 30px;
+  background-repeat: repeat;
+}
+main h1{
+  font-size: 30px;
+  font-family: cursive;
+}
+
+
+.gum {
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.card {
+  width: 170px;
+  height: 170px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg) scale(1.08);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-front {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #333;
+  text-align: center;
+}
+
+
+.line{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+
+
+
+.strilka, .gum {
+  cursor: pointer;
+  cursor: url( images/kursorPointed.png ) 8 0, auto;
+}
