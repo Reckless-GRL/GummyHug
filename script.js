@@ -23,3 +23,35 @@ cards.forEach(card => {
     });
   });
 });
+function toggleCart() {
+  const sidebar = document.getElementById('cartSidebar');
+  sidebar.classList.toggle('open');
+}
+
+function closeCart() {
+  document.getElementById('cartSidebar').classList.remove('open');
+}
+
+// Проста логіка додавання товарів (приклад)
+function addToCart(productName) {
+  const cartItems = document.getElementById('cartItems');
+  const li = document.createElement('li');
+  li.textContent = productName;
+  cartItems.appendChild(li);
+}
+function addToCart(productName, imageSrc) {
+  const cartItems = document.getElementById('cartItems');
+  
+  const li = document.createElement('li');
+  
+  const img = document.createElement('img');
+  img.src = imageSrc;
+  img.alt = productName;
+  img.style.width = "40px";
+  img.style.marginRight = "10px";
+
+  li.appendChild(img);
+  li.appendChild(document.createTextNode(productName));
+  
+  cartItems.appendChild(li);
+}
