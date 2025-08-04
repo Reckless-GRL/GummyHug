@@ -371,6 +371,11 @@ footer div{
 }
 .card-back button{
   font-size: 10px;
+  background-color: #ebc4cf;
+}
+.card-back button:active {
+  transform: scale(0.75);
+  background-color: #b3798f;
 }
 
 .strilka, .gum , footer img, .flip-card{
