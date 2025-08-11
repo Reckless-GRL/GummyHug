@@ -378,7 +378,83 @@ footer div{
   background-color: #b3798f;
 }
 
-.strilka, .gum , footer img, .flip-card{
+.remove-btn {
+  background: pink;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.remove-btn:hover {
+  background: hotpink;
+  color: white;
+}
+#cartItems li {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 14px;
+}
+.checkout-btn {
+  background-color: #ff6f91;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+.checkout-btn:hover {
+  background-color: #ff4f7b;
+}
+
+/* Модалка */
+.modal {
+  display: none; /* ховаємо за замовчуванням */
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* затемнення фону */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}
+
+.submit-btn {
+  background-color: #ff6f91;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #ff4f7b;
+}
+
+
+.strilka, .gum , footer img, .flip-card,.card-back button {
   cursor: pointer;
   cursor: url( images/kursorPointed.png ) 8 0, auto;
 }

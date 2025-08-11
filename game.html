@@ -1,0 +1,46 @@
+<html> 
+    <head> 
+        <link rel="stylesheet" href="gamestyle.css" />  
+    <link 
+      rel="shortcut icon" 
+      href="https://png.pngtree.com/png-vector/20230808/ourmid/pngtree-gummy-bear-clipart-painted-gummy-bear-on-white-background-cartoon-vector-png-image_6862985.png"/> 
+        <title>TheGummyHugShop</title> 
+    </head> 
+    <body>
+  <h1>🍬 Зроби свою желейку! 🍬</h1>
+
+  <label>Вибери форму:</label>
+  <select id="shape" onchange="updateJelly()">
+    <option value="Ведмедик">🧸 Ведмедик</option>
+    <option value="Черв’ячок">🐛 Черв’ячок</option>
+    <option value="Сердечко">💛 Сердечко</option>
+    <option value="Зірочка">⭐ Зірочка</option>
+  </select><br/>
+
+  <label>Вибери колір:</label>
+  <select id="color" onchange="updateJelly()">
+    <option value="Червоний" data-color="#ff4d4d">Червоний</option>
+    <option value="Жовтий" data-color="#ffe066">Жовтий</option>
+    <option value="Зелений" data-color="#85e085">Зелений</option>
+    <option value="Фіолетовий" data-color="#c084fc">Фіолетовий</option>
+  </select><br/>
+
+  <label>Вибери смак:</label>
+  <select id="flavor" onchange="updateJelly()">
+    <option value="Полуниця">Полуниця</option>
+    <option value="Манго">Манго</option>
+    <option value="Яблуко">Яблуко</option>
+    <option value="Кола">Кола</option>
+  </select><br/>
+
+  <button onclick="createOrder()">Замовити желейку!</button>
+
+  <div class="jelly" id="jellyOutput"></div>
+
+  <div class="jelly-img" id="jellyBox">?</div>
+
+  <div id="orderCode"></div>
+
+  </body>
+  <script src="gamescript.js"></script>
+</html>

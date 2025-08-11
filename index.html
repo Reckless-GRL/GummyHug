@@ -247,6 +247,11 @@
                             </div>
                     </div>
                     <div class="card">
+                            <div class="card-front">
+                    <a href="game.html"><img class="gum" src="images/gummy18.jpg"></a>
+                            </div>
+                    </div>
+                    <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
                     <img class="gum" src="images/gummy17.jpg">
@@ -276,6 +281,32 @@
   <p id="totalPrice">Загальна сума: 0 грн</p>
   <button onclick="closeCart()">Закрити</button>
   <button onclick="clearCart()" class="clear-btn">Очистити кошик</button>
+  <button onclick="openModal()" class="checkout-btn">Оформити замовлення</button>
+
+<!-- Модальне вікно -->
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Оформлення замовлення</h2>
+    <form id="orderForm">
+  <label for="name">Ім'я:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="phone">Телефон:</label><br>
+  <input type="tel" id="phone" name="phone" required pattern="[\+0-9\s\-]{5,15}"><br><br>
+
+  <label for="promo">Промокод (якщо є):</label><br>
+  <input type="text" id="promo" name="promo" placeholder="Введи промокод"><br><br>
+
+  <label for="comment">Коментар:</label><br>
+  <textarea id="comment" name="comment" rows="3"></textarea><br><br>
+
+  <button type="submit" class="submit-btn">Підтвердити замовлення</button>
+</form>
+
+<div id="promoMessage" style="color: green; margin-top: 10px;"></div>
+  </div>
+</div>
 </div>
         <div class="zamovlennya">
             <h1>Як зробити замовлення</h1>
